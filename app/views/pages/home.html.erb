@@ -1,0 +1,15 @@
+<table width="" cellspacing="" cellpadding="" border="">
+  <tr>
+    <th>User ID</th>
+    <th>Entry count</th>
+    <th>Spent time</th>
+  </tr>
+  <% @result.each do |id,count,time| %>
+    <tr>
+      <td><%= id %></td>
+      <td><%= count %></td>
+      <td><%= time %></td>
+    </tr>
+  <% end %>
+</table>
+
